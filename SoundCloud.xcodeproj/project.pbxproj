@@ -13,6 +13,7 @@
 		F5A2A3021E5B7A3400B35420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A3011E5B7A3400B35420 /* Assets.xcassets */; };
 		F5A2A3051E5B7A3400B35420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A3031E5B7A3400B35420 /* LaunchScreen.storyboard */; };
 		F5A2A30E1E5B7BF800B35420 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2A30D1E5B7BF800B35420 /* NetworkingManager.swift */; };
+		F5A2A3101E5B830D00B35420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2A30F1E5B830D00B35420 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F5A2A3041E5B7A3400B35420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A2A3061E5B7A3400B35420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A2A30D1E5B7BF800B35420 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		F5A2A30F1E5B830D00B35420 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F5A2A2FB1E5B7A3400B35420 /* Main.storyboard */,
+				F5A2A30F1E5B830D00B35420 /* AppDelegate.swift */,
 				F5A2A3011E5B7A3400B35420 /* Assets.xcassets */,
 				F5A2A3031E5B7A3400B35420 /* LaunchScreen.storyboard */,
 				F5A2A3061E5B7A3400B35420 /* Info.plist */,
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A2A3101E5B830D00B35420 /* AppDelegate.swift in Sources */,
 				F5A2A30E1E5B7BF800B35420 /* NetworkingManager.swift in Sources */,
 				F5A2A3001E5B7A3400B35420 /* SoundCloud.xcdatamodeld in Sources */,
 			);
