@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AF8FFC3BDCAF2664D5BE4ED1 /* Pods_SoundCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1290C6DCB68CD965CFB108 /* Pods_SoundCloud.framework */; };
-		F5A2A2F81E5B7A3400B35420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2A2F71E5B7A3400B35420 /* AppDelegate.swift */; };
-		F5A2A2FA1E5B7A3400B35420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2A2F91E5B7A3400B35420 /* ViewController.swift */; };
 		F5A2A2FD1E5B7A3400B35420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A2FB1E5B7A3400B35420 /* Main.storyboard */; };
 		F5A2A3001E5B7A3400B35420 /* SoundCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5A2A2FE1E5B7A3400B35420 /* SoundCloud.xcdatamodeld */; };
 		F5A2A3021E5B7A3400B35420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A3011E5B7A3400B35420 /* Assets.xcassets */; };
@@ -22,8 +20,6 @@
 		9BA660D5C888F43C701D9228 /* Pods-SoundCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloud/Pods-SoundCloud.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1290C6DCB68CD965CFB108 /* Pods_SoundCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A2A2F41E5B7A3400B35420 /* SoundCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5A2A2F71E5B7A3400B35420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5A2A2F91E5B7A3400B35420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5A2A2FC1E5B7A3400B35420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5A2A2FF1E5B7A3400B35420 /* SoundCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundCloud.xcdatamodel; sourceTree = "<group>"; };
 		F5A2A3011E5B7A3400B35420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,14 +78,12 @@
 		F5A2A2F61E5B7A3400B35420 /* SoundCloud */ = {
 			isa = PBXGroup;
 			children = (
-				F5A2A30C1E5B7BE400B35420 /* Utilities */,
-				F5A2A2F71E5B7A3400B35420 /* AppDelegate.swift */,
-				F5A2A2F91E5B7A3400B35420 /* ViewController.swift */,
 				F5A2A2FB1E5B7A3400B35420 /* Main.storyboard */,
 				F5A2A3011E5B7A3400B35420 /* Assets.xcassets */,
 				F5A2A3031E5B7A3400B35420 /* LaunchScreen.storyboard */,
 				F5A2A3061E5B7A3400B35420 /* Info.plist */,
 				F5A2A2FE1E5B7A3400B35420 /* SoundCloud.xcdatamodeld */,
+				F5A2A30C1E5B7BE400B35420 /* Utilities */,
 			);
 			path = SoundCloud;
 			sourceTree = "<group>";
@@ -226,10 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A2A2FA1E5B7A3400B35420 /* ViewController.swift in Sources */,
 				F5A2A30E1E5B7BF800B35420 /* NetworkingManager.swift in Sources */,
 				F5A2A3001E5B7A3400B35420 /* SoundCloud.xcdatamodeld in Sources */,
-				F5A2A2F81E5B7A3400B35420 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

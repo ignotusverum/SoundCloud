@@ -13,9 +13,9 @@ pod 'EZSwiftExtensions'
 pod 'CoreStore'
 
 # Networking
-pod 'Alamofire', '4.0.0'
+pod 'Alamofire'
 
-pod 'SwiftyJSON', :git => 'https://github.com/appsailor/SwiftyJSON.git', :branch => 'swift3'
+pod 'SwiftyJSON'
 
 # swift integration
 use_frameworks!
