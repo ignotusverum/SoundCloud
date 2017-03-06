@@ -11,6 +11,7 @@ import PromiseKit
 import SwiftyJSON
 
 let hostName = "api.soundcloud.com"
+let clientID = "aa45989bb0c262788e2d11f1ea041b65"
 
 class NetworkingManager: NSObject {
     
@@ -24,11 +25,6 @@ class NetworkingManager: NSObject {
     static let shared = NetworkingManager()
     
     let manager = Alamofire.SessionManager.default
-    
-    func configureHTTPHeader() {
-        
-        headers["Authorization"] = "client_id=aa45989bb0c262788e2d11f1ea041b65"
-    }
     
     var baseUrl: String {
         
@@ -48,13 +44,11 @@ class NetworkingManager: NSObject {
     
     func URLString(path: String)-> String {
         
-        return "\(baseUrl)/\(path)"
+        return "\(baseUrl)/\(path)&client_id=\(clientID)"
     }
     
     // Promise Requests
     func request(_ method: HTTPMethod, path URLString: String, parameters: [String: Any]? = nil) -> Promise<JSON> {
-        
-        configureHTTPHeader()
         
         return Promise { fulfill, reject in
             
