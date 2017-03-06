@@ -15,14 +15,15 @@ let clientID = "aa45989bb0c262788e2d11f1ea041b65"
 
 class NetworkingManager: NSObject {
     
+    /// Singleton
+    static let shared = NetworkingManager()
+    
     fileprivate var isHeaderSet = false
     
     var headers = [
         
         "Content-Type": "application/json",
     ]
-    
-    static let shared = NetworkingManager()
     
     let manager = Alamofire.SessionManager.default
     

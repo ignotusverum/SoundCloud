@@ -10,7 +10,7 @@ pod 'PromiseKit', '~> 4.0'
 pod 'EZSwiftExtensions'
 
 # Core Data
-pod 'CoreStore'
+pod 'CoreStore', '3.0.0'
 
 # Networking
 pod 'Alamofire'
