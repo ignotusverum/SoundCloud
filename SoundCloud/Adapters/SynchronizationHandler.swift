@@ -10,9 +10,9 @@ import Foundation
 
 let SynchronizerHandlerSynchronizedNotificationKey = "SynchronizerHandlerSynchronizedNotificationKey"
 
-class TMSynchronizerHandler: SynchronizerAdapterDelegate {
+class SynchronizerHandler: SynchronizerAdapterDelegate {
     
-    static let sharedSynchronizer = TMSynchronizerHandler()
+    static let shared = SynchronizerHandler()
     
     // MARK: - Properties
     

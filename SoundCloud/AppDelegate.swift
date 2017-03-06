@@ -13,5 +13,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        
+        setupAdapters()
+    }
+    
+    /// Setup Adapters
+    private func setupAdapters() {
+        
+        /// Shared synchronizer
+        let synchronizer = SynchronizerHandler.shared
+        
+        /// Create synchronizers
+        let playlistAdapter = PlaylistAdapter()
+        synchronizer.addAdapter(playlistAdapter)
+        
+        /// Synrchronize
+        synchronizer.resynchronize()
+    }
 }
 

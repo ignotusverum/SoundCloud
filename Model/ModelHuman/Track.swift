@@ -62,6 +62,11 @@ struct TrackJSON {
 @objc(Track)
 public class Track: _Track {
 
+    var artworkURL: URL? {
+        
+        return URL(string: artworkURLString ?? "")
+    }
+    
     public override func update(from source: JSON, in transaction: BaseDataTransaction) throws {
         try super.update(from: source, in: transaction)
         

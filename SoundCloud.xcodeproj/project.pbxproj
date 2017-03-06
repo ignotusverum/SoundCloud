@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		AF8FFC3BDCAF2664D5BE4ED1 /* Pods_SoundCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1290C6DCB68CD965CFB108 /* Pods_SoundCloud.framework */; };
+		F54984211E6DBB8C00472559 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984201E6DBB8C00472559 /* Array.swift */; };
+		F54984251E6DBDCB00472559 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984241E6DBDCB00472559 /* ImageView.swift */; };
 		F5A2A2FD1E5B7A3400B35420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A2FB1E5B7A3400B35420 /* Main.storyboard */; };
 		F5A2A3021E5B7A3400B35420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A3011E5B7A3400B35420 /* Assets.xcassets */; };
 		F5A2A3051E5B7A3400B35420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A3031E5B7A3400B35420 /* LaunchScreen.storyboard */; };
@@ -47,6 +49,8 @@
 		52F9DC4306F2EEBDFDEEFEE3 /* Pods-SoundCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloud/Pods-SoundCloud.release.xcconfig"; sourceTree = "<group>"; };
 		9BA660D5C888F43C701D9228 /* Pods-SoundCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloud/Pods-SoundCloud.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1290C6DCB68CD965CFB108 /* Pods_SoundCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54984201E6DBB8C00472559 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		F54984241E6DBDCB00472559 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		F5A2A2F41E5B7A3400B35420 /* SoundCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A2A2FC1E5B7A3400B35420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5A2A3011E5B7A3400B35420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,12 +125,12 @@
 		F5A2A2F61E5B7A3400B35420 /* SoundCloud */ = {
 			isa = PBXGroup;
 			children = (
-				F5BBE8581E6CE96A00CD0C14 /* Adapters */,
-				F5BBE8431E6CDC3800CD0C14 /* Models */,
 				F5A2A2FB1E5B7A3400B35420 /* Main.storyboard */,
 				F5A2A30F1E5B830D00B35420 /* AppDelegate.swift */,
 				F5A2A3011E5B7A3400B35420 /* Assets.xcassets */,
 				F5A2A3031E5B7A3400B35420 /* LaunchScreen.storyboard */,
+				F5BBE8581E6CE96A00CD0C14 /* Adapters */,
+				F5BBE8431E6CDC3800CD0C14 /* Models */,
 				F5A2A30C1E5B7BE400B35420 /* Utilities */,
 			);
 			path = SoundCloud;
@@ -138,6 +142,8 @@
 				F5A2A30D1E5B7BF800B35420 /* NetworkingManager.swift */,
 				F5BBE8561E6CE81F00CD0C14 /* CoreDataManager.swift */,
 				F5BBE8711E6CEFAC00CD0C14 /* SwiftyJSON.swift */,
+				F54984201E6DBB8C00472559 /* Array.swift */,
+				F54984241E6DBDCB00472559 /* ImageView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -339,8 +345,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BBE85A1E6CE99900CD0C14 /* SynchronizerAdapter.swift in Sources */,
+				F54984251E6DBDCB00472559 /* ImageView.swift in Sources */,
 				F5BBE85C1E6CE99F00CD0C14 /* SynchronizationHandler.swift in Sources */,
 				F5A2A3101E5B830D00B35420 /* AppDelegate.swift in Sources */,
+				F54984211E6DBB8C00472559 /* Array.swift in Sources */,
 				F5BBE8671E6CEC2F00CD0C14 /* Playlist.swift in Sources */,
 				F5A2A30E1E5B7BF800B35420 /* NetworkingManager.swift in Sources */,
 				F5BBE8681E6CEC2F00CD0C14 /* Track.swift in Sources */,
