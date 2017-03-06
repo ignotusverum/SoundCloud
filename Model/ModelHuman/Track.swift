@@ -175,8 +175,14 @@ public class Track: _Track {
         /// Stream URL
         streamURLString = source[TrackJSON.streamURL].string
 
-        
-//        static let user = "user"
+        /// User
+        let tempUser = source[TrackJSON.user].json
+        if let userJSON = tempUser {
+            
+            let user = try transaction.importUniqueObject(Into<User>(), source: userJSON)
+            self.user = user
+        }
+
 //        static let attachmentsUri = "attachments_uri"
 //        static let permalinkURL = "permalink_url"
 //        static let artworkURL = "artwork_url"

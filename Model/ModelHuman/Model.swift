@@ -16,7 +16,7 @@ struct ModelJSON {
 }
 
 @objc(Model)
-open class Model: _Model {
+open class Model: _Model, ImportableUniqueObject {
 
     var json: JSON?
     
@@ -29,11 +29,11 @@ open class Model: _Model {
     }
     
     // Unique ID Type
-    public typealias UniqueIDType = Int
+    public typealias UniqueIDType = NSNumber
     
-    public var uniqueIDValue: Int {
-        get { return id.intValue }
-        set { id = NSNumber(value: newValue) }
+    public var uniqueIDValue: NSNumber {
+        get { return id }
+        set { id = newValue }
     }
     
     // Unique ID value
@@ -59,9 +59,9 @@ open class Model: _Model {
         return true
     }
     
-    public static func uniqueID(from source: JSON, in transaction: BaseDataTransaction) throws -> Int? {
+    public static func uniqueID(from source: JSON, in transaction: BaseDataTransaction) throws -> NSNumber? {
         
-        return source["id"].int
+        return source["id"].number
     }
     
     public func update(from source: JSON, in transaction: BaseDataTransaction) throws {

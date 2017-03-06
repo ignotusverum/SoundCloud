@@ -79,6 +79,9 @@ public class Playlist: _Playlist {
         license = source[PlaylistJSON.license].string
         
         /// Tracks
-        /// Update Model
+        let tracksJSONArray = source[PlaylistJSON.tracks].array ?? []
+        
+        let tempTracks = try transaction.importUniqueObjects(Into<Track>(), sourceArray: tracksJSONArray)
+        self.addTracks(NSSet(array: tempTracks))
     }
 }
