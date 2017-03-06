@@ -29,8 +29,15 @@
 		F5A2A3101E5B830D00B35420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2A30F1E5B830D00B35420 /* AppDelegate.swift */; };
 		F5BBE8461E6CDC4A00CD0C14 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8441E6CDC4A00CD0C14 /* Model.xcdatamodeld */; };
 		F5BBE8571E6CE81F00CD0C14 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8561E6CE81F00CD0C14 /* CoreDataManager.swift */; };
-		F5BBE85A1E6CE99900CD0C14 /* SynchronizationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8591E6CE99900CD0C14 /* SynchronizationAdapter.swift */; };
+		F5BBE85A1E6CE99900CD0C14 /* SynchronizerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8591E6CE99900CD0C14 /* SynchronizerAdapter.swift */; };
 		F5BBE85C1E6CE99F00CD0C14 /* SynchronizationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE85B1E6CE99F00CD0C14 /* SynchronizationHandler.swift */; };
+		F5BBE85E1E6CEBDA00CD0C14 /* PlaylistAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE85D1E6CEBDA00CD0C14 /* PlaylistAdapter.swift */; };
+		F5BBE8671E6CEC2F00CD0C14 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8601E6CEC2F00CD0C14 /* Playlist.swift */; };
+		F5BBE8681E6CEC2F00CD0C14 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8611E6CEC2F00CD0C14 /* Track.swift */; };
+		F5BBE8691E6CEC2F00CD0C14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8621E6CEC2F00CD0C14 /* User.swift */; };
+		F5BBE86A1E6CEC2F00CD0C14 /* _Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8641E6CEC2F00CD0C14 /* _Playlist.swift */; };
+		F5BBE86B1E6CEC2F00CD0C14 /* _Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8651E6CEC2F00CD0C14 /* _Track.swift */; };
+		F5BBE86C1E6CEC2F00CD0C14 /* _User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8661E6CEC2F00CD0C14 /* _User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +53,15 @@
 		F5A2A30F1E5B830D00B35420 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5BBE8451E6CDC4A00CD0C14 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F5BBE8561E6CE81F00CD0C14 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		F5BBE8591E6CE99900CD0C14 /* SynchronizationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizationAdapter.swift; sourceTree = "<group>"; };
+		F5BBE8591E6CE99900CD0C14 /* SynchronizerAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizerAdapter.swift; sourceTree = "<group>"; };
 		F5BBE85B1E6CE99F00CD0C14 /* SynchronizationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizationHandler.swift; sourceTree = "<group>"; };
+		F5BBE85D1E6CEBDA00CD0C14 /* PlaylistAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistAdapter.swift; sourceTree = "<group>"; };
+		F5BBE8601E6CEC2F00CD0C14 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		F5BBE8611E6CEC2F00CD0C14 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		F5BBE8621E6CEC2F00CD0C14 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F5BBE8641E6CEC2F00CD0C14 /* _Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Playlist.swift; sourceTree = "<group>"; };
+		F5BBE8651E6CEC2F00CD0C14 /* _Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Track.swift; sourceTree = "<group>"; };
+		F5BBE8661E6CEC2F00CD0C14 /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,8 @@
 		F5BBE8431E6CDC3800CD0C14 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F5BBE85F1E6CEC2F00CD0C14 /* ModelHuman */,
+				F5BBE8631E6CEC2F00CD0C14 /* ModelMachine */,
 				F5BBE8441E6CDC4A00CD0C14 /* Model.xcdatamodeld */,
 			);
 			path = Models;
@@ -142,10 +158,33 @@
 			isa = PBXGroup;
 			children = (
 				F5BBE85B1E6CE99F00CD0C14 /* SynchronizationHandler.swift */,
-				F5BBE8591E6CE99900CD0C14 /* SynchronizationAdapter.swift */,
+				F5BBE8591E6CE99900CD0C14 /* SynchronizerAdapter.swift */,
+				F5BBE85D1E6CEBDA00CD0C14 /* PlaylistAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
+		};
+		F5BBE85F1E6CEC2F00CD0C14 /* ModelHuman */ = {
+			isa = PBXGroup;
+			children = (
+				F5BBE8601E6CEC2F00CD0C14 /* Playlist.swift */,
+				F5BBE8611E6CEC2F00CD0C14 /* Track.swift */,
+				F5BBE8621E6CEC2F00CD0C14 /* User.swift */,
+			);
+			name = ModelHuman;
+			path = Model/ModelHuman;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5BBE8631E6CEC2F00CD0C14 /* ModelMachine */ = {
+			isa = PBXGroup;
+			children = (
+				F5BBE8641E6CEC2F00CD0C14 /* _Playlist.swift */,
+				F5BBE8651E6CEC2F00CD0C14 /* _Track.swift */,
+				F5BBE8661E6CEC2F00CD0C14 /* _User.swift */,
+			);
+			name = ModelMachine;
+			path = Model/ModelMachine;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -281,7 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "mogenerator --template-var arc=true -m SoundCloud/Models/Model.xcdatamodeld / -M Model/ModelMachine -H Model/ModelHuman --base-class TMManagedObject --includem Model/ModelIncludes --swift --template-path ModelTemplates";
+			shellScript = "mogenerator --template-var arc=true -m SoundCloud/Models/Model.xcdatamodeld / -M Model/ModelMachine -H Model/ModelHuman --base-class NSManagedObject --includem Model/ModelIncludes --swift --template-path ModelTemplates";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -290,12 +329,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5BBE85A1E6CE99900CD0C14 /* SynchronizationAdapter.swift in Sources */,
+				F5BBE85A1E6CE99900CD0C14 /* SynchronizerAdapter.swift in Sources */,
 				F5BBE85C1E6CE99F00CD0C14 /* SynchronizationHandler.swift in Sources */,
 				F5A2A3101E5B830D00B35420 /* AppDelegate.swift in Sources */,
+				F5BBE8671E6CEC2F00CD0C14 /* Playlist.swift in Sources */,
 				F5A2A30E1E5B7BF800B35420 /* NetworkingManager.swift in Sources */,
+				F5BBE8681E6CEC2F00CD0C14 /* Track.swift in Sources */,
+				F5BBE86C1E6CEC2F00CD0C14 /* _User.swift in Sources */,
 				F5BBE8571E6CE81F00CD0C14 /* CoreDataManager.swift in Sources */,
 				F5BBE8461E6CDC4A00CD0C14 /* Model.xcdatamodeld in Sources */,
+				F5BBE8691E6CEC2F00CD0C14 /* User.swift in Sources */,
+				F5BBE85E1E6CEBDA00CD0C14 /* PlaylistAdapter.swift in Sources */,
+				F5BBE86A1E6CEC2F00CD0C14 /* _Playlist.swift in Sources */,
+				F5BBE86B1E6CEC2F00CD0C14 /* _Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

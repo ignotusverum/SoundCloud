@@ -28,7 +28,7 @@ public enum PlaylistRelationships: String {
     case tracks = "tracks"
 }
 
-open class _Playlist: TMManagedObject {
+open class _Playlist: NSManagedObject {
 
     // MARK: - Class methods
 

@@ -55,7 +55,7 @@ public enum TrackRelationships: String {
     case user = "user"
 }
 
-open class _Track: TMManagedObject {
+open class _Track: NSManagedObject {
 
     // MARK: - Class methods
 

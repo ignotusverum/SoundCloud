@@ -19,7 +19,7 @@ public enum UserRelationships: String {
     case track = "track"
 }
 
-open class _User: TMManagedObject {
+open class _User: NSManagedObject {
 
     // MARK: - Class methods
 
