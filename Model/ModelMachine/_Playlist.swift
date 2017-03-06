@@ -7,7 +7,6 @@ import CoreData
 public enum PlaylistAttributes: String {
     case duration = "duration"
     case genre = "genre"
-    case id = "id"
     case labelName = "labelName"
     case lastModified = "lastModified"
     case license = "license"
@@ -28,15 +27,15 @@ public enum PlaylistRelationships: String {
     case tracks = "tracks"
 }
 
-open class _Playlist: NSManagedObject {
+open class _Playlist: Model {
 
     // MARK: - Class methods
 
-    open class func entityName () -> String {
+    override open class func entityName () -> String {
         return "Playlist"
     }
 
-    open class func entity(_ managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
+    override open class func entity(_ managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
         return NSEntityDescription.entity(forEntityName: self.entityName(), in: managedObjectContext)
     }
 
@@ -58,9 +57,6 @@ open class _Playlist: NSManagedObject {
 
     @NSManaged open
     var genre: String?
-
-    @NSManaged public
-    var id: NSNumber?
 
     @NSManaged open
     var labelName: String?

@@ -6,7 +6,6 @@ import CoreData
 
 public enum UserAttributes: String {
     case avatarURLString = "avatarURLString"
-    case id = "id"
     case kind = "kind"
     case lastModified = "lastModified"
     case permalinkString = "permalinkString"
@@ -19,15 +18,15 @@ public enum UserRelationships: String {
     case track = "track"
 }
 
-open class _User: NSManagedObject {
+open class _User: Model {
 
     // MARK: - Class methods
 
-    open class func entityName () -> String {
+    override open class func entityName () -> String {
         return "User"
     }
 
-    open class func entity(_ managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
+    override open class func entity(_ managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
         return NSEntityDescription.entity(forEntityName: self.entityName(), in: managedObjectContext)
     }
 
@@ -46,9 +45,6 @@ open class _User: NSManagedObject {
 
     @NSManaged open
     var avatarURLString: String?
-
-    @NSManaged public
-    var id: NSNumber?
 
     @NSManaged open
     var kind: String?

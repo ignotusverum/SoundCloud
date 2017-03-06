@@ -38,6 +38,8 @@
 		F5BBE86A1E6CEC2F00CD0C14 /* _Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8641E6CEC2F00CD0C14 /* _Playlist.swift */; };
 		F5BBE86B1E6CEC2F00CD0C14 /* _Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8651E6CEC2F00CD0C14 /* _Track.swift */; };
 		F5BBE86C1E6CEC2F00CD0C14 /* _User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8661E6CEC2F00CD0C14 /* _User.swift */; };
+		F5BBE86E1E6CEE1B00CD0C14 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE86D1E6CEE1B00CD0C14 /* Model.swift */; };
+		F5BBE8701E6CEE1F00CD0C14 /* _Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE86F1E6CEE1F00CD0C14 /* _Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		F5BBE8641E6CEC2F00CD0C14 /* _Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Playlist.swift; sourceTree = "<group>"; };
 		F5BBE8651E6CEC2F00CD0C14 /* _Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Track.swift; sourceTree = "<group>"; };
 		F5BBE8661E6CEC2F00CD0C14 /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
+		F5BBE86D1E6CEE1B00CD0C14 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F5BBE86F1E6CEE1F00CD0C14 /* _Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,9 +171,10 @@
 		F5BBE85F1E6CEC2F00CD0C14 /* ModelHuman */ = {
 			isa = PBXGroup;
 			children = (
-				F5BBE8601E6CEC2F00CD0C14 /* Playlist.swift */,
+				F5BBE86D1E6CEE1B00CD0C14 /* Model.swift */,
 				F5BBE8611E6CEC2F00CD0C14 /* Track.swift */,
 				F5BBE8621E6CEC2F00CD0C14 /* User.swift */,
+				F5BBE8601E6CEC2F00CD0C14 /* Playlist.swift */,
 			);
 			name = ModelHuman;
 			path = Model/ModelHuman;
@@ -178,6 +183,7 @@
 		F5BBE8631E6CEC2F00CD0C14 /* ModelMachine */ = {
 			isa = PBXGroup;
 			children = (
+				F5BBE86F1E6CEE1F00CD0C14 /* _Model.swift */,
 				F5BBE8641E6CEC2F00CD0C14 /* _Playlist.swift */,
 				F5BBE8651E6CEC2F00CD0C14 /* _Track.swift */,
 				F5BBE8661E6CEC2F00CD0C14 /* _User.swift */,
@@ -336,7 +342,9 @@
 				F5A2A30E1E5B7BF800B35420 /* NetworkingManager.swift in Sources */,
 				F5BBE8681E6CEC2F00CD0C14 /* Track.swift in Sources */,
 				F5BBE86C1E6CEC2F00CD0C14 /* _User.swift in Sources */,
+				F5BBE86E1E6CEE1B00CD0C14 /* Model.swift in Sources */,
 				F5BBE8571E6CE81F00CD0C14 /* CoreDataManager.swift in Sources */,
+				F5BBE8701E6CEE1F00CD0C14 /* _Model.swift in Sources */,
 				F5BBE8461E6CDC4A00CD0C14 /* Model.xcdatamodeld in Sources */,
 				F5BBE8691E6CEC2F00CD0C14 /* User.swift in Sources */,
 				F5BBE85E1E6CEBDA00CD0C14 /* PlaylistAdapter.swift in Sources */,

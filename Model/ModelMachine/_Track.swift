@@ -17,7 +17,6 @@ public enum TrackAttributes: String {
     case embeddableBy = "embeddableBy"
     case favoritingsCount = "favoritingsCount"
     case genre = "genre"
-    case id = "id"
     case isrc = "isrc"
     case keySignature = "keySignature"
     case kind = "kind"
@@ -55,15 +54,15 @@ public enum TrackRelationships: String {
     case user = "user"
 }
 
-open class _Track: NSManagedObject {
+open class _Track: Model {
 
     // MARK: - Class methods
 
-    open class func entityName () -> String {
+    override open class func entityName () -> String {
         return "Track"
     }
 
-    open class func entity(_ managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
+    override open class func entity(_ managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
         return NSEntityDescription.entity(forEntityName: self.entityName(), in: managedObjectContext)
     }
 
@@ -115,9 +114,6 @@ open class _Track: NSManagedObject {
 
     @NSManaged open
     var genre: String?
-
-    @NSManaged public
-    var id: NSNumber?
 
     @NSManaged open
     var isrc: String?
