@@ -40,6 +40,7 @@
 		F5BBE86C1E6CEC2F00CD0C14 /* _User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8661E6CEC2F00CD0C14 /* _User.swift */; };
 		F5BBE86E1E6CEE1B00CD0C14 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE86D1E6CEE1B00CD0C14 /* Model.swift */; };
 		F5BBE8701E6CEE1F00CD0C14 /* _Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE86F1E6CEE1F00CD0C14 /* _Model.swift */; };
+		F5BBE8721E6CEFAC00CD0C14 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE8711E6CEFAC00CD0C14 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		F5BBE8661E6CEC2F00CD0C14 /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
 		F5BBE86D1E6CEE1B00CD0C14 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F5BBE86F1E6CEE1F00CD0C14 /* _Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Model.swift; sourceTree = "<group>"; };
+		F5BBE8711E6CEFAC00CD0C14 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				F5A2A30D1E5B7BF800B35420 /* NetworkingManager.swift */,
 				F5BBE8561E6CE81F00CD0C14 /* CoreDataManager.swift */,
+				F5BBE8711E6CEFAC00CD0C14 /* SwiftyJSON.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				F5BBE8571E6CE81F00CD0C14 /* CoreDataManager.swift in Sources */,
 				F5BBE8701E6CEE1F00CD0C14 /* _Model.swift in Sources */,
 				F5BBE8461E6CDC4A00CD0C14 /* Model.xcdatamodeld in Sources */,
+				F5BBE8721E6CEFAC00CD0C14 /* SwiftyJSON.swift in Sources */,
 				F5BBE8691E6CEC2F00CD0C14 /* User.swift in Sources */,
 				F5BBE85E1E6CEBDA00CD0C14 /* PlaylistAdapter.swift in Sources */,
 				F5BBE86A1E6CEC2F00CD0C14 /* _Playlist.swift in Sources */,

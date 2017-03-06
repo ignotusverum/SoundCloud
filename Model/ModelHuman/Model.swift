@@ -6,9 +6,9 @@
 //  Copyright © 2016 Human Ventures Co. All rights reserved.
 //
 
+import CoreStore
 import SwiftyJSON
 import PromiseKit
-import CoreStore
 
 struct ModelJSON {
     
@@ -80,5 +80,8 @@ open class Model: _Model {
         try self.updateModel(with: source, transaction: transaction)
     }
     
-    func updateModel(with source: JSON, transaction: BaseDataTransaction) throws { }
+    func updateModel(with source: JSON, transaction: BaseDataTransaction) throws {
+        
+        id = source[ModelJSON.id].number
+    }
 }

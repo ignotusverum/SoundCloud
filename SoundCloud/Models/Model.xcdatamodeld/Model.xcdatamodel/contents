@@ -9,11 +9,11 @@
         <attribute name="labelName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastModified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="license" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="permalingString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="permalinkString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="permalinkURLString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="playlistDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="purchaseString" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="release_day" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="releaseDay" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="releaseMonth" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="releaseYear" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="tagList" optional="YES" attributeType="String" syncable="YES"/>

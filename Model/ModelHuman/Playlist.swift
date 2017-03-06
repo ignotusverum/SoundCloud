@@ -33,4 +33,52 @@ struct PlaylistJSON {
 @objc(Playlist)
 public class Playlist: _Playlist {
 
+    public override func update(from source: JSON, in transaction: BaseDataTransaction) throws {
+        try super.update(from: source, in: transaction)
+        
+        /// Duration
+        duration = source[PlaylistJSON.duration].number
+        
+        /// Release Day
+        releaseDay = source[PlaylistJSON.releaseDay].date
+        
+        /// Pemalink
+        permalinkString = source[PlaylistJSON.permalinkURL].string
+        
+        /// Permalink URL
+        permalinkURLString = source[PlaylistJSON.permailink].string
+        
+        /// Release month
+        releaseMonth = source[PlaylistJSON.releaseMonth].number
+        
+        /// Description
+        playlistDescription = source[PlaylistJSON.description].string
+        
+        /// URI
+        uriString = source[PlaylistJSON.uri].string
+        
+        /// Label Name
+        labelName = source[PlaylistJSON.labelName].string
+        
+        /// Tag list
+        tagList = source[PlaylistJSON.tagList].string
+        
+        /// Release Year
+        releaseYear = source[PlaylistJSON.releaseYear].number
+        
+        /// Track Count
+        trackCount = source[PlaylistJSON.trackCount].number
+        
+        /// User ID
+        userID = source[PlaylistJSON.userID].number
+        
+        /// Last Modified
+        lastModified = source[PlaylistJSON.lastModified].date
+        
+        /// Licence
+        license = source[PlaylistJSON.license].string
+        
+        /// Tracks
+        /// Update Model
+    }
 }

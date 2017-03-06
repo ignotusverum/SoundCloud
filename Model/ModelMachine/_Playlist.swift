@@ -10,13 +10,13 @@ public enum PlaylistAttributes: String {
     case labelName = "labelName"
     case lastModified = "lastModified"
     case license = "license"
-    case permalingString = "permalingString"
     case permalinkString = "permalinkString"
+    case permalinkURLString = "permalinkURLString"
     case playlistDescription = "playlistDescription"
     case purchaseString = "purchaseString"
+    case releaseDay = "releaseDay"
     case releaseMonth = "releaseMonth"
     case releaseYear = "releaseYear"
-    case release_day = "release_day"
     case tagList = "tagList"
     case trackCount = "trackCount"
     case uriString = "uriString"
@@ -68,10 +68,10 @@ open class _Playlist: Model {
     var license: String?
 
     @NSManaged open
-    var permalingString: String?
+    var permalinkString: String?
 
     @NSManaged open
-    var permalinkString: String?
+    var permalinkURLString: String?
 
     @NSManaged open
     var playlistDescription: String?
@@ -79,14 +79,14 @@ open class _Playlist: Model {
     @NSManaged open
     var purchaseString: String?
 
+    @NSManaged open
+    var releaseDay: Date?
+
     @NSManaged public
     var releaseMonth: NSNumber?
 
     @NSManaged public
     var releaseYear: NSNumber?
-
-    @NSManaged open
-    var release_day: Date?
 
     @NSManaged open
     var tagList: String?
