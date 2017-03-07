@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCollectionViewCell" id="hLN-fB-TQG" customClass="CardCollectionViewCell" customModule="SoundCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32L-ry-PBg">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yfy-zY-yjL">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="32L-ry-PBg" firstAttribute="height" secondItem="hLN-fB-TQG" secondAttribute="height" id="4PI-MQ-uF2"/>
+                <constraint firstItem="yfy-zY-yjL" firstAttribute="width" secondItem="32L-ry-PBg" secondAttribute="width" id="HXB-w0-6je"/>
+                <constraint firstItem="32L-ry-PBg" firstAttribute="centerX" secondItem="hLN-fB-TQG" secondAttribute="centerX" id="WaN-KN-zMy"/>
+                <constraint firstItem="32L-ry-PBg" firstAttribute="centerY" secondItem="hLN-fB-TQG" secondAttribute="centerY" id="bOz-Ke-w3V"/>
+                <constraint firstItem="yfy-zY-yjL" firstAttribute="height" secondItem="32L-ry-PBg" secondAttribute="height" id="dc3-Cx-S3r"/>
+                <constraint firstItem="32L-ry-PBg" firstAttribute="width" secondItem="hLN-fB-TQG" secondAttribute="width" id="oo6-zf-lXR"/>
+                <constraint firstItem="yfy-zY-yjL" firstAttribute="centerX" secondItem="32L-ry-PBg" secondAttribute="centerX" id="rrU-Du-EvD"/>
+                <constraint firstItem="yfy-zY-yjL" firstAttribute="centerY" secondItem="32L-ry-PBg" secondAttribute="centerY" id="u73-q5-ahK"/>
+            </constraints>
+            <connections>
+                <outlet property="backImageView" destination="32L-ry-PBg" id="C4L-jS-zOo"/>
+                <outlet property="frontImageView" destination="yfy-zY-yjL" id="Blb-Lo-xOk"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="105"/>
+        </collectionViewCell>
+    </objects>
+</document>
