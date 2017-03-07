@@ -24,6 +24,10 @@
 		AF8FFC3BDCAF2664D5BE4ED1 /* Pods_SoundCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1290C6DCB68CD965CFB108 /* Pods_SoundCloud.framework */; };
 		F54984211E6DBB8C00472559 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984201E6DBB8C00472559 /* Array.swift */; };
 		F54984251E6DBDCB00472559 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984241E6DBDCB00472559 /* ImageView.swift */; };
+		F54984271E6E366E00472559 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984261E6E366E00472559 /* GameLogic.swift */; };
+		F54984291E6E372C00472559 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984281E6E372C00472559 /* Tile.swift */; };
+		F549842D1E6E37DE00472559 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549842C1E6E37DE00472559 /* CardCollectionViewCell.swift */; };
+		F549842F1E6E39A800472559 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549842E1E6E39A800472559 /* GameViewController.swift */; };
 		F5A2A2FD1E5B7A3400B35420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A2FB1E5B7A3400B35420 /* Main.storyboard */; };
 		F5A2A3021E5B7A3400B35420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A3011E5B7A3400B35420 /* Assets.xcassets */; };
 		F5A2A3051E5B7A3400B35420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2A3031E5B7A3400B35420 /* LaunchScreen.storyboard */; };
@@ -51,6 +55,10 @@
 		AA1290C6DCB68CD965CFB108 /* Pods_SoundCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54984201E6DBB8C00472559 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		F54984241E6DBDCB00472559 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F54984261E6E366E00472559 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		F54984281E6E372C00472559 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		F549842C1E6E37DE00472559 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		F549842E1E6E39A800472559 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F5A2A2F41E5B7A3400B35420 /* SoundCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A2A2FC1E5B7A3400B35420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5A2A3011E5B7A3400B35420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +111,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F549842A1E6E37A900472559 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				F549842B1E6E37BD00472559 /* Collection View Cells */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		F549842B1E6E37BD00472559 /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F549842C1E6E37DE00472559 /* CardCollectionViewCell.swift */,
+			);
+			path = "Collection View Cells";
+			sourceTree = "<group>";
+		};
 		F5A2A2EB1E5B7A3400B35420 = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +151,10 @@
 			children = (
 				F5A2A2FB1E5B7A3400B35420 /* Main.storyboard */,
 				F5A2A30F1E5B830D00B35420 /* AppDelegate.swift */,
+				F549842E1E6E39A800472559 /* GameViewController.swift */,
 				F5A2A3011E5B7A3400B35420 /* Assets.xcassets */,
 				F5A2A3031E5B7A3400B35420 /* LaunchScreen.storyboard */,
+				F549842A1E6E37A900472559 /* UI Elements */,
 				F5BBE8581E6CE96A00CD0C14 /* Adapters */,
 				F5BBE8431E6CDC3800CD0C14 /* Models */,
 				F5A2A30C1E5B7BE400B35420 /* Utilities */,
@@ -163,6 +189,8 @@
 				F5BBE85F1E6CEC2F00CD0C14 /* ModelHuman */,
 				F5BBE8631E6CEC2F00CD0C14 /* ModelMachine */,
 				F5BBE8441E6CDC4A00CD0C14 /* Model.xcdatamodeld */,
+				F54984261E6E366E00472559 /* GameLogic.swift */,
+				F54984281E6E372C00472559 /* Tile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,8 +376,11 @@
 				F54984251E6DBDCB00472559 /* ImageView.swift in Sources */,
 				F5BBE85C1E6CE99F00CD0C14 /* SynchronizationHandler.swift in Sources */,
 				F5A2A3101E5B830D00B35420 /* AppDelegate.swift in Sources */,
+				F549842D1E6E37DE00472559 /* CardCollectionViewCell.swift in Sources */,
 				F54984211E6DBB8C00472559 /* Array.swift in Sources */,
+				F54984271E6E366E00472559 /* GameLogic.swift in Sources */,
 				F5BBE8671E6CEC2F00CD0C14 /* Playlist.swift in Sources */,
+				F54984291E6E372C00472559 /* Tile.swift in Sources */,
 				F5A2A30E1E5B7BF800B35420 /* NetworkingManager.swift in Sources */,
 				F5BBE8681E6CEC2F00CD0C14 /* Track.swift in Sources */,
 				F5BBE86C1E6CEC2F00CD0C14 /* _User.swift in Sources */,
@@ -361,6 +392,7 @@
 				F5BBE8691E6CEC2F00CD0C14 /* User.swift in Sources */,
 				F5BBE85E1E6CEBDA00CD0C14 /* PlaylistAdapter.swift in Sources */,
 				F5BBE86A1E6CEC2F00CD0C14 /* _Playlist.swift in Sources */,
+				F549842F1E6E39A800472559 /* GameViewController.swift in Sources */,
 				F5BBE86B1E6CEC2F00CD0C14 /* _Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
