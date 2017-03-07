@@ -20,7 +20,7 @@ class CoreDataManager {
         
         let bundleID = Bundle.main.bundleIdentifier!
         
-        let dataStack = DataStack(modelName: "TMModel")
+        let dataStack = DataStack(modelName: "Model")
         try! dataStack.addStorageAndWait(
             SQLiteStore(
                 fileName: "Test.sqlite",

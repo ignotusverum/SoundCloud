@@ -22,15 +22,15 @@ class PlaylistAdapter: SynchronizerAdapter {
     /// Fetches all playlists
     ///
     /// - Returns: promise with playlist array
-    class func fetch()-> Promise<[Playlist]> {
+    class func fetch()-> Promise<Playlist?> {
 
         /// Networking call
         
         let netman = NetworkingManager.shared
-        return netman.request(.get, path: "playlists/\(playlistID)").then { response-> Promise<[Playlist]> in
+        return netman.request(.get, path: "playlists/\(playlistID)").then { response-> Promise<Playlist?> in
             
             /// Insert into db
-            return CoreDataManager.insertASync(Into<Playlist>(), source: responseArray)
+            return CoreDataManager.insertASync(Into<Playlist>(), source: response)
         }
     }
 }
