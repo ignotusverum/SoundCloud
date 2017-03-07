@@ -29,10 +29,6 @@ class PlaylistAdapter: SynchronizerAdapter {
         let netman = NetworkingManager.shared
         return netman.request(.get, path: "playlists/\(playlistID)").then { response-> Promise<[Playlist]> in
             
-            guard let responseArray = response.array else {
-                return Promise(value: [])
-            }
-            
             /// Insert into db
             return CoreDataManager.insertASync(Into<Playlist>(), source: responseArray)
         }
