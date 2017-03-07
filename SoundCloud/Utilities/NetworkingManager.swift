@@ -45,7 +45,7 @@ class NetworkingManager: NSObject {
     
     func URLString(path: String)-> String {
         
-        return "\(baseUrl)/\(path)&client_id=\(clientID)"
+        return "\(baseUrl)/\(path)?client_id=\(clientID)"
     }
     
     // Promise Requests
