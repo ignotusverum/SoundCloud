@@ -13,20 +13,20 @@ import UIKit.UIImage
 
 protocol GameProtocol {
     func gameDidStart(_ game: MemoryGame)
-    func game(_ game: MemoryGame, showCards cards: [Card])
-    func game(_ game: MemoryGame, hideCards cards: [Card])
+    func game(_ game: MemoryGame, showCards cards: [Track])
+    func game(_ game: MemoryGame, hideCards cards: [Track])
     func gameDidEnd(_ game: MemoryGame, elapsedTime: TimeInterval)
 }
 
 class MemoryGame {
     
     // MARK: - Properties
-    var cards:[Card] = []
+    var cards:[Track] = []
     var delegate: GameProtocol?
     var isPlaying: Bool = false
     
-    fileprivate var cardsShown:[Card] = [Card]()
-    fileprivate var startTime:Date?
+    fileprivate var cardsShown: [Track] = []
+    fileprivate var startTime: Date?
     
     var numberOfCards: Int {
         
@@ -57,14 +57,15 @@ class MemoryGame {
         startTime = nil
     }
     
-    func didSelectCard(_ card: Card?) {
+    func didSelectCard(_ card: Track?) {
         guard let card = card else { return }
         
         delegate?.game(self, showCards: [card])
         
         if unpairedCardShown() {
-            let unpaired = unpairedCard()!
-            if card.equals(unpaired) {
+            
+            let unpaired = unpairedCard()
+            if card.isEqual(unpaired) {
                 cardsShown.append(card)
             } else {
                 let unpairedCard = cardsShown.removeLast()
@@ -83,7 +84,7 @@ class MemoryGame {
         }
     }
     
-    func cardAtIndex(_ index: Int) -> Card? {
+    func cardAtIndex(_ index: Int) -> Track? {
         if cards.count > index {
             return cards[index]
         } else {
@@ -91,7 +92,7 @@ class MemoryGame {
         }
     }
     
-    func indexForCard(_ card: Card) -> Int? {
+    func indexForCard(_ card: Track) -> Int? {
         for index in 0...cards.count-1 {
             if card === cards[index] {
                 return index
@@ -109,17 +110,13 @@ class MemoryGame {
         return cardsShown.count % 2 != 0
     }
     
-    fileprivate func unpairedCard() -> Card? {
+    fileprivate func unpairedCard() -> Track? {
         let unpairedCard = cardsShown.last
         return unpairedCard
     }
     
-    fileprivate func randomCards(_ cardsData:[UIImage]) -> [Card] {
-        var cards = [Card]()
-        for i in 0...cardsData.count-1 {
-            let card = Card.init(image: cardsData[i])
-            cards.append(contentsOf: [card, Card.init(card: card)])
-        }
+    fileprivate func randomCards(_ cardsData:[UIImage]) -> [Track] {
+        
         cards.shuffle()
         return cards
     }

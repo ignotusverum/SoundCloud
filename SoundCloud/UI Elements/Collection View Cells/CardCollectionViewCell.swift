@@ -15,10 +15,10 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var frontImageView: UIImageView!
     @IBOutlet weak var backImageView: UIImageView!
     
-    var card:Card? {
+    var card: Track? {
         didSet {
             guard let card = card else { return }
-            frontImageView.image = card.image
+//            frontImageView.image = card.image
         }
     }
     

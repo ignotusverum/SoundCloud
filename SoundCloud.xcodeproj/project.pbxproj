@@ -25,7 +25,6 @@
 		F54984211E6DBB8C00472559 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984201E6DBB8C00472559 /* Array.swift */; };
 		F54984251E6DBDCB00472559 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984241E6DBDCB00472559 /* ImageView.swift */; };
 		F54984271E6E366E00472559 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984261E6E366E00472559 /* GameLogic.swift */; };
-		F54984291E6E372C00472559 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54984281E6E372C00472559 /* Tile.swift */; };
 		F549842D1E6E37DE00472559 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549842C1E6E37DE00472559 /* CardCollectionViewCell.swift */; };
 		F549842F1E6E39A800472559 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549842E1E6E39A800472559 /* GameViewController.swift */; };
 		F54984311E6E3EA700472559 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54984301E6E3EA700472559 /* CardCollectionViewCell.xib */; };
@@ -57,7 +56,6 @@
 		F54984201E6DBB8C00472559 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		F54984241E6DBDCB00472559 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		F54984261E6E366E00472559 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
-		F54984281E6E372C00472559 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		F549842C1E6E37DE00472559 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F549842E1E6E39A800472559 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F54984301E6E3EA700472559 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 				F5BBE8631E6CEC2F00CD0C14 /* ModelMachine */,
 				F5BBE8441E6CDC4A00CD0C14 /* Model.xcdatamodeld */,
 				F54984261E6E366E00472559 /* GameLogic.swift */,
-				F54984281E6E372C00472559 /* Tile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -384,7 +381,6 @@
 				F54984211E6DBB8C00472559 /* Array.swift in Sources */,
 				F54984271E6E366E00472559 /* GameLogic.swift in Sources */,
 				F5BBE8671E6CEC2F00CD0C14 /* Playlist.swift in Sources */,
-				F54984291E6E372C00472559 /* Tile.swift in Sources */,
 				F5A2A30E1E5B7BF800B35420 /* NetworkingManager.swift in Sources */,
 				F5BBE8681E6CEC2F00CD0C14 /* Track.swift in Sources */,
 				F5BBE86C1E6CEC2F00CD0C14 /* _User.swift in Sources */,

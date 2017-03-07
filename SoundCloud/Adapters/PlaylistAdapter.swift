@@ -33,4 +33,18 @@ class PlaylistAdapter: SynchronizerAdapter {
             return CoreDataManager.insertASync(Into<Playlist>(), source: response)
         }
     }
+    
+    /// Fetch all images with artork URL
+    ///
+    /// - Returns: promise with tracks array
+    class func fetchTracksWithImages()-> Promise<[Track]> {
+        
+        return Promise { fulfill, reject in
+            
+            let result = CoreDataManager.defaultStack.fetchAll(From<Track>(),
+                                                               Where("\(TrackAttributes.artworkURLString.rawValue) != nil"))
+            
+            fulfill(result ?? [])
+        }
+    }
 }

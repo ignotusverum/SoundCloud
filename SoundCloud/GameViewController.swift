@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PromiseKit
 
 class GameViewController: UIViewController {
 
@@ -20,14 +21,24 @@ class GameViewController: UIViewController {
     /// Play
     @IBOutlet weak var playButton: UIButton!
     
+    /// Game logic
     let gameLogic = MemoryGame()
+    
+    /// Tracks with images
+    var tracks: [Track] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PlaylistAdapter.fetch().then { result in
+        PlaylistAdapter.fetch().then { result-> Promise<[Track]> in
             
-            print(result)
+            return PlaylistAdapter.fetchTracksWithImages()
+            }.then { resultTracks-> Void in
+                
+                self.tracks = resultTracks
+            }.catch { error in
+                
+                print(error)
         }
         
         /// Setting up delegate logic
@@ -104,7 +115,7 @@ class GameViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(GameViewController.gameTimerAction), userInfo: nil, repeats: true)
     }
     
-    func memoryGame(_ game: MemoryGame, showCards cards: [Card]) {
+    func memoryGame(_ game: MemoryGame, showCards cards: [Track]) {
         for card in cards {
             guard let index = gameLogic.indexForCard(card) else { continue }
             let cell = collectionView.cellForItem(at: IndexPath(item: index, section:0)) as! CardCollectionViewCell
@@ -112,7 +123,7 @@ class GameViewController: UIViewController {
         }
     }
     
-    func memoryGame(_ game: MemoryGame, hideCards cards: [Card]) {
+    func memoryGame(_ game: MemoryGame, hideCards cards: [Track]) {
         for card in cards {
             guard let index = gameLogic.indexForCard(card) else { continue }
             let cell = collectionView.cellForItem(at: IndexPath(item: index, section:0)) as! CardCollectionViewCell
