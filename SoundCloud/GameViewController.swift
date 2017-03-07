@@ -25,11 +25,16 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        PlaylistAdapter.fetch().then { result in
+            
+            print(result)
+        }
+        
         /// Setting up delegate logic
 //        gameLogic.delegate = self
         
         /// Initial reset
-        resetGame()
+//        resetGame()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -159,7 +164,7 @@ extension GameViewController: UICollectionViewDataSource {
     // MARK: - UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

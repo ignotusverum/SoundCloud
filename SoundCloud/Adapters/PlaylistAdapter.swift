@@ -7,15 +7,34 @@
 //
 
 import PromiseKit
+import CoreStore
 
 class PlaylistAdapter: SynchronizerAdapter {
 
+    /// Default playlist
+    static let playlistID = "79670980"
+    
     override func synchronizeData() {
         
         super.synchronizeData()
     }
     
-//    class func fetch()-> Promise<Playlist?> {
-//        
-//    }
+    /// Fetches all playlists
+    ///
+    /// - Returns: promise with playlist array
+    class func fetch()-> Promise<[Playlist]> {
+
+        /// Networking call
+        
+        let netman = NetworkingManager.shared
+        return netman.request(.get, path: "playlists/\(playlistID)").then { response-> Promise<[Playlist]> in
+            
+            guard let responseArray = response.array else {
+                return Promise(value: [])
+            }
+            
+            /// Insert into db
+            return CoreDataManager.insertASync(Into<Playlist>(), source: responseArray)
+        }
+    }
 }
